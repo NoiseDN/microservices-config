@@ -9,14 +9,14 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
   rabbitmq:
-    host: eagle.rmq.cloudamqp.com
-    username: iclcnsiv
-    password: PuivyPKXprkDmUEMh0sPH3lepJZBRWZi
-    virtual-host: iclcnsiv
-#    host: localhost
-#    port: 5672
-#    username: guest
-#    password: guest
+#    host: eagle.rmq.cloudamqp.com
+#    username: iclcnsiv
+#    password: PuivyPKXprkDmUEMh0sPH3lepJZBRWZi
+#    virtual-host: iclcnsiv
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   sleuth:
     enabled: false
   zipkin:
