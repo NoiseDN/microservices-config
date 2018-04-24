@@ -1,0 +1,12 @@
+server:
+  port: 8000
+
+turbine:
+  aggregator:
+    clusterConfig: BILL,GUEST,ORDER,STOCK,TABLE
+  appConfig: Bill,Guest,Order,Stock,Table
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false

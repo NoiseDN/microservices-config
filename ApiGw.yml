@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+zuul:
+  ignored-services: '*'
+  routes:
+    bill:
+      path: /bill/**
+      serviceId: Bill
+      stripPrefix: true
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+    guest:
+      path: /guest/**
+      serviceId: Guest
+      stripPrefix: true
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+    order:
+      path: /order/**
+      serviceId: Order
+      stripPrefix: true
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+    table:
+      path: /table/**
+      serviceId: Table
+      stripPrefix: true
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+    dashboard:
+      path: /dashboard/**
+      serviceId: Dashboard
+      stripPrefix: true
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
