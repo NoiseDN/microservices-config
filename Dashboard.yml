@@ -8,5 +8,4 @@ turbine:
 
 eureka:
   client:
-    fetch-registry: true
-    register-with-eureka: false
+    registerWithEureka: false
