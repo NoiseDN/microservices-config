@@ -13,7 +13,7 @@ spring:
 #    username: iclcnsiv
 #    password: PuivyPKXprkDmUEMh0sPH3lepJZBRWZi
 #    virtual-host: iclcnsiv
-    host: localhost
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
