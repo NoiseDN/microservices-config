@@ -17,6 +17,10 @@ spring:
 #    port: 5672
 #    username: guest
 #    password: guest
+  sleuth:
+    enabled: false
+  zipkin:
+    enabled: false
 
 eureka:
   client:
