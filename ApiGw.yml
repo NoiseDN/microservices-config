@@ -28,6 +28,11 @@ zuul:
       serviceId: Table
       stripPrefix: true
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
+    stock:
+      path: /stock/**
+      serviceId: Stock
+      stripPrefix: true
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
     dashboard:
       path: /dashboard/**
       serviceId: Dashboard
