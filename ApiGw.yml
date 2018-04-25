@@ -38,6 +38,11 @@ zuul:
       serviceId: Dashboard
       stripPrefix: true
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
+    config:
+      path: /config/**
+      serviceId: Config
+      stripPrefix: true
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
 
 eureka:
   client:
