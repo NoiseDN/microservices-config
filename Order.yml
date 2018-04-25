@@ -1,2 +1,8 @@
 server:
   port: 8105
+spring:
+  cloud.stream.bindings:
+    stock:
+      destination: stockQueue
+    bill:
+      destination: billQueue
