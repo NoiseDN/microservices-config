@@ -1,2 +1,6 @@
 server:
   port: 8102
+spring:
+  cloud.stream.bindings:
+    input:
+      destination: tableQueue
