@@ -1,2 +1,10 @@
 server:
   port: 8101
+spring:
+  cloud.stream.bindings:
+    bill:
+      destination: billQueue
+    table:
+      destination: tableQueue
+    order:
+      destination: orderQueue
